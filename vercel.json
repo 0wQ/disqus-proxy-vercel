@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "name": "disqus-proxy",
+  "routes": [{
+    "src": "/api/.*",
+    "dest": "/api"
+  }, {
+    "src": "/.*",
+    "status": 404
+  }],
+  "github": {
+    "enabled": true,
+    "autoJobCancelation": true
+  }
+}
